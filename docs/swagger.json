@@ -1,0 +1,259 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This API aggregates promotions from different Swiss online store.",
+        "title": "Swiss Deals API",
+        "contact": {
+            "name": "Gaël G.",
+            "url": "https://blog.gothuey.dev/"
+        },
+        "license": {
+            "name": "MIT license",
+            "url": "https://github.com/gaelgoth/swiss-deals-api/blob/main/LICENSE"
+        },
+        "version": "1.0.0"
+    },
+    "host": "deals-api.gothuey.dev",
+    "basePath": "/api",
+    "paths": {
+        "/": {
+            "get": {
+                "description": "get the status of server.",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Health check 🩺"
+                ],
+                "summary": "Show the status of server.",
+                "responses": {}
+            }
+        },
+        "/deals/digitec": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Galaxus 🐢"
+                ],
+                "summary": "Get current deal from Digitec",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.GalaxusProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/galaxus": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Galaxus 🐢"
+                ],
+                "summary": "Get current deal from Galaxus",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.GalaxusProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qbeer": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from Qbeer",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qlock": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from Qlock",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qooking": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from Qooking",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qoqa": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from QoQa",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qsport": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from Qsport",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        },
+        "/deals/qwine": {
+            "get": {
+                "description": "receive the promotion of the day",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Qoqa 🦦"
+                ],
+                "summary": "Get current deal from Qwine",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controllers.QoqaProduct"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controllers.GalaxusProduct": {
+            "type": "object",
+            "properties": {
+                "image_url": {
+                    "type": "string"
+                },
+                "offer_price": {
+                    "type": "integer"
+                },
+                "regular_price": {
+                    "type": "integer"
+                },
+                "remaining_stock": {
+                    "type": "integer"
+                },
+                "stock": {
+                    "type": "integer"
+                },
+                "store": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            }
+        },
+        "controllers.QoqaProduct": {
+            "type": "object",
+            "properties": {
+                "image_url": {
+                    "type": "string"
+                },
+                "offer_price": {
+                    "type": "string"
+                },
+                "regular_price": {
+                    "type": "string"
+                },
+                "remaining_stock": {
+                    "type": "integer"
+                },
+                "stock": {
+                    "type": "integer"
+                },
+                "store": {
+                    "type": "string"
+                },
+                "subtitle": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

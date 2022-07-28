@@ -1,0 +1,170 @@
+basePath: /api
+definitions:
+  controllers.GalaxusProduct:
+    properties:
+      image_url:
+        type: string
+      offer_price:
+        type: integer
+      regular_price:
+        type: integer
+      remaining_stock:
+        type: integer
+      stock:
+        type: integer
+      store:
+        type: string
+      title:
+        type: string
+      url:
+        type: string
+    type: object
+  controllers.QoqaProduct:
+    properties:
+      image_url:
+        type: string
+      offer_price:
+        type: string
+      regular_price:
+        type: string
+      remaining_stock:
+        type: integer
+      stock:
+        type: integer
+      store:
+        type: string
+      subtitle:
+        type: string
+      title:
+        type: string
+      url:
+        type: string
+    type: object
+host: deals-api.gothuey.dev
+info:
+  contact:
+    name: Gaël G.
+    url: https://blog.gothuey.dev/
+  description: This API aggregates promotions from different Swiss online store.
+  license:
+    name: MIT license
+    url: https://github.com/gaelgoth/swiss-deals-api/blob/main/LICENSE
+  title: Swiss Deals API
+  version: 1.0.0
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: get the status of server.
+      produces:
+      - application/json
+      responses: {}
+      summary: Show the status of server.
+      tags:
+      - "Health check \U0001FA7A"
+  /deals/digitec:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.GalaxusProduct'
+      summary: Get current deal from Digitec
+      tags:
+      - "Galaxus \U0001F422"
+  /deals/galaxus:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.GalaxusProduct'
+      summary: Get current deal from Galaxus
+      tags:
+      - "Galaxus \U0001F422"
+  /deals/qbeer:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from Qbeer
+      tags:
+      - "Qoqa \U0001F9A6"
+  /deals/qlock:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from Qlock
+      tags:
+      - "Qoqa \U0001F9A6"
+  /deals/qooking:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from Qooking
+      tags:
+      - "Qoqa \U0001F9A6"
+  /deals/qoqa:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from QoQa
+      tags:
+      - "Qoqa \U0001F9A6"
+  /deals/qsport:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from Qsport
+      tags:
+      - "Qoqa \U0001F9A6"
+  /deals/qwine:
+    get:
+      description: receive the promotion of the day
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.QoqaProduct'
+      summary: Get current deal from Qwine
+      tags:
+      - "Qoqa \U0001F9A6"
+swagger: "2.0"
