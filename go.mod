@@ -40,7 +40,7 @@ require (
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
 	github.com/swaggo/swag v1.8.4
 	github.com/temoto/robotstxt v1.1.2 // indirect
-	github.com/tidwall/gjson v1.14.1
+	github.com/tidwall/gjson v1.14.2
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.38.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
