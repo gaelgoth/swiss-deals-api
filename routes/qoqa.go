@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/gael-gothuey/deal-backend/controllers"
+	"github.com/gaelgoth/swiss-deals-api/controllers"
 	"github.com/gofiber/fiber/v2"
 )
 

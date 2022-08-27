@@ -5,16 +5,15 @@ import (
 	"os"
 	"time"
 
-	swagger "github.com/arsmn/fiber-swagger/v2" // fiber-swagger middleware
-	"github.com/joho/godotenv"
-
-	_ "github.com/gael-gothuey/deal-backend/docs"
-	"github.com/gael-gothuey/deal-backend/routes"
+	_ "github.com/gaelgoth/swiss-deals-api/docs"
+	"github.com/gaelgoth/swiss-deals-api/routes"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cache"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/redirect/v2"
+	"github.com/gofiber/swagger" // fiber-swagger middleware
+	"github.com/joho/godotenv"
 )
 
 // @title        Swiss Deals API
@@ -75,7 +74,7 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/api", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success": true,
-			"message": "You are at the endpoint 😉",
+			"message": "Everything Is Okay 👋🏾",
 		})
 	})
 

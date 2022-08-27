@@ -8,7 +8,6 @@ import (
 
 	"github.com/tidwall/gjson"
 
-	_ "github.com/gael-gothuey/deal-backend/docs"
 	"github.com/gofiber/fiber/v2"
 )
 

@@ -7,7 +7,6 @@ import (
 	"regexp"
 	"strconv"
 
-	_ "github.com/gael-gothuey/deal-backend/docs"
 	"github.com/gocolly/colly"
 	"github.com/gofiber/fiber/v2"
 )
