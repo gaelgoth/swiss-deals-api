@@ -1,6 +1,5 @@
 <p align="center">
-<!-- TODO: Set logo here -->
-   <img src="https://github.com/gael-gothuey/deal-frontend/raw/main/src/assets/images/logos/logo.png" alt="swiss-deal-logo" width="60px" height="auto">
+      <img src="https://github.com/gaelgoth/swiss-deals-frontend/raw/main/src/assets/images/logos/logo.png" alt="swiss-deal-logo" width="60px" height="auto">
    
 </p>
 
