@@ -18,7 +18,7 @@ import (
 
 // @title        Swiss Deals API
 // @version      1.0.0
-// @description  This API aggregates promotions from different Swiss online store.
+// @description  Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available on http://deals.gothuey.dev/
 
 // @contact.name   Gaël G.
 // @contact.url    https://blog.gothuey.dev/

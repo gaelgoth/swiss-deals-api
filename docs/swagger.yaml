@@ -45,7 +45,8 @@ info:
   contact:
     name: Gaël G.
     url: https://blog.gothuey.dev/
-  description: This API aggregates promotions from different Swiss online store.
+  description: Aggregate deals of the day from Digitec, Galaxus, QoQa. Front available
+    on http://deals.gothuey.dev/
   license:
     name: MIT license
     url: https://github.com/gaelgoth/swiss-deals-api/blob/main/LICENSE

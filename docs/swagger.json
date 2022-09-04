@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "This API aggregates promotions from different Swiss online store.",
+        "description": "Aggregate deals of the day from Digitec, Galaxus, QoQa. Front available on http://deals.gothuey.dev/",
         "title": "Swiss Deals API",
         "contact": {
             "name": "Gaël G.",
