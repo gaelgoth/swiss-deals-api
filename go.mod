@@ -5,7 +5,7 @@ go 1.18
 
 require (
 	github.com/gocolly/colly v1.2.0
-	github.com/gofiber/fiber/v2 v2.36.0
+	github.com/gofiber/fiber/v2 v2.37.0
 	github.com/gofiber/swagger v0.1.0
 	github.com/joho/godotenv v1.4.0
 )
