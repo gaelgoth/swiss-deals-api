@@ -45,7 +45,7 @@ info:
   contact:
     name: Gaël G.
     url: https://blog.gothuey.dev/
-  description: Aggregate deals of the day from Digitec, Galaxus, QoQa. Front available
+  description: Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available
     on http://deals.gothuey.dev/
   license:
     name: MIT license

@@ -272,7 +272,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "/api",
 	Schemes:          []string{},
 	Title:            "Swiss Deals API",
-	Description:      "Aggregate deals of the day from Digitec, Galaxus, QoQa. Front available on http://deals.gothuey.dev/",
+	Description:      "Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available on http://deals.gothuey.dev/",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
