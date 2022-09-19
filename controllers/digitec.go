@@ -23,12 +23,12 @@ type GalaxusProduct struct {
 }
 
 // Galaxus godoc
-// @Summary      Get current deal from Digitec
-// @Description  receive the promotion of the day
-// @Tags         Galaxus 🐢
-// @Produce      json
-// @Success      200  {object}  controllers.GalaxusProduct
-// @Router       /deals/digitec [get]
+// @Summary     Get current deal from Digitec
+// @Description receive the promotion of the day
+// @Tags        Galaxus 🐢
+// @Produce     json
+// @Success     200 {object} controllers.GalaxusProduct
+// @Router      /deals/digitec [get]
 func GetDigitecOffer(c *fiber.Ctx) error {
 	log.Println("GetDigitecOffer")
 	var offerCollector []string = GetCollectorData([]string{"digitec.ch", "www.digitec.ch", "https://www.digitec.ch/fr/liveshopping/81"})
@@ -65,12 +65,12 @@ func GetDigitecOffer(c *fiber.Ctx) error {
 }
 
 // Galaxus godoc
-// @Summary      Get current deal from Galaxus
-// @Description  receive the promotion of the day
-// @Tags         Galaxus 🐢
-// @Produce      json
-// @Success      200  {object}  controllers.GalaxusProduct
-// @Router       /deals/galaxus [get]
+// @Summary     Get current deal from Galaxus
+// @Description receive the promotion of the day
+// @Tags        Galaxus 🐢
+// @Produce     json
+// @Success     200 {object} controllers.GalaxusProduct
+// @Router      /deals/galaxus [get]
 func GetGalaxusOffer(c *fiber.Ctx) error {
 	log.Println("GetGalaxusOffer")
 	var offerCollector []string = GetCollectorData([]string{"galaxus.ch", "www.galaxus.ch", "https://www.galaxus.ch/fr/liveshopping/81"})

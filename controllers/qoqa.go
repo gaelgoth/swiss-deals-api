@@ -24,12 +24,12 @@ type QoqaProduct struct {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from QoQa
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qoqa [get]
+// @Summary     Get current deal from QoQa
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qoqa [get]
 func GetQoqaOffer(c *fiber.Ctx) error {
 	log.Println("GetQoqaOffer")
 
@@ -39,12 +39,12 @@ func GetQoqaOffer(c *fiber.Ctx) error {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from Qwine
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qwine [get]
+// @Summary     Get current deal from Qwine
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qwine [get]
 func GetQwineOffer(c *fiber.Ctx) error {
 	log.Println("GetQwineOffer")
 
@@ -54,12 +54,12 @@ func GetQwineOffer(c *fiber.Ctx) error {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from Qbeer
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qbeer [get]
+// @Summary     Get current deal from Qbeer
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qbeer [get]
 func GetBeerOffer(c *fiber.Ctx) error {
 	log.Println("GetBeerOffer")
 
@@ -69,12 +69,12 @@ func GetBeerOffer(c *fiber.Ctx) error {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from Qsport
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qsport [get]
+// @Summary     Get current deal from Qsport
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qsport [get]
 func GetQsportOffer(c *fiber.Ctx) error {
 	log.Println("GetQsportOffer")
 
@@ -84,12 +84,12 @@ func GetQsportOffer(c *fiber.Ctx) error {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from Qooking
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qooking  [get]
+// @Summary     Get current deal from Qooking
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qooking  [get]
 func GetQookingOffer(c *fiber.Ctx) error {
 	log.Println("GetQookingOffer")
 
@@ -99,12 +99,12 @@ func GetQookingOffer(c *fiber.Ctx) error {
 }
 
 // Qoqa godoc
-// @Summary      Get current deal from Qlock
-// @Description  receive the promotion of the day
-// @Tags         Qoqa 🦦
-// @Produce      json
-// @Success      200  {object}  controllers.QoqaProduct
-// @Router       /deals/qlock  [get]
+// @Summary     Get current deal from Qlock
+// @Description receive the promotion of the day
+// @Tags        Qoqa 🦦
+// @Produce     json
+// @Success     200 {object} controllers.QoqaProduct
+// @Router      /deals/qlock  [get]
 func GetQlockOffer(c *fiber.Ctx) error {
 	log.Println("GetQlockOffer")
 
