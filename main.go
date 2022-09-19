@@ -16,20 +16,18 @@ import (
 	"github.com/joho/godotenv"
 )
 
-// @title        Swiss Deals API
-// @version      1.0.0
-// @description  Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available on http://deals.gothuey.dev/
+// @title       Swiss Deals API
+// @version     1.0.0
+// @description Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available on http://deals.gothuey.dev/
 
-// @contact.name   Gaël G.
-// @contact.url    https://blog.gothuey.dev/
+// @contact.name Gaël G.
+// @contact.url  https://blog.gothuey.dev/
 
-// @license.name  MIT license
-// @license.url   https://github.com/gaelgoth/swiss-deals-api/blob/main/LICENSE
+// @license.name MIT license
+// @license.url  https://github.com/gaelgoth/swiss-deals-api/blob/main/LICENSE
 
 // @host deals-api.gothuey.dev
 // //@host localhost:9000
-
-// @BasePath  /api
 
 func main() {
 	err := godotenv.Load()
@@ -63,18 +61,18 @@ func main() {
 }
 
 // HealthCheck godoc
-// @Summary      Show the status of server.
-// @Description  get the status of server.
-// @Tags         Health check 🩺
-// @Accept       */*
-// @Produce      json
-// @Router       / [get]
+// @Summary     Show the status of server.
+// @Description get the status of server.
+// @Tags        Health check 🩺
+// @Accept      */*
+// @Produce     json
+// @Router      / [get]
 func setupRoutes(app *fiber.App) {
 
 	app.Get("/api", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success": true,
-			"message": "Everything Is Okay 👋🏾",
+			"message": "Everything Is Okay 👋🏾 from air!",
 		})
 	})
 

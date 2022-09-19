@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    container_name: swiss-deals-api
+    build: 
+      context: .
+      dockerfile: ./Dockerfile.dev
+    environment: 
+      DEBUG: "true"          
+      SERVING_PORT: ":9000"
+    volumes:
+      - ./:/app
+    ports:
+      - "9000:9000"
+    command: sh -c 'swag init && air'

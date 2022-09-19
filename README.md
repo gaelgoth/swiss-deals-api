@@ -1,6 +1,6 @@
 <p align="center">
       <img src="https://github.com/gaelgoth/swiss-deals-frontend/raw/main/src/assets/images/logos/logo.png" alt="swiss-deal-logo" width="60px" height="auto">
-   
+
 </p>
 
 <h1 align="center">
@@ -10,6 +10,7 @@
 ## Introduction
 
 This API aggregates the deals of the day on the following online sites:
+
 - Digitec
 - Galaxus
 - Qoqa
@@ -30,17 +31,20 @@ Run development server with `Makefile`
    # auto reload on file modification 
    make watch
    ```
+
 Run development server with `Dockerfile`
+
 ```bash
-# TODO
+# auto reload on file modification with air
+docker-compose -f docker-compose.dev.yml up   
 ```
 
 ## Documentation 📖
 
-- Swagger UI: https://deal-backend-production.up.railway.app/swagger/index.html
-
+- Swagger UI: <https://deal-backend-production.up.railway.app/swagger/index.html>
 
 ## Contributing 🦸
+
  Feel free to contribute via Pull Request.
 
 ## Changelog 📆
