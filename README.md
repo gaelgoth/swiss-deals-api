@@ -23,7 +23,7 @@ This API aggregates the deals of the day on the following online sites:
 
 ## Installation ⚒️
 
-> Compatible with Golang 1.18.4
+> Compatible with Golang 1.19
 
 Run development server with `Makefile`
 
@@ -31,6 +31,8 @@ Run development server with `Makefile`
    # auto reload on file modification 
    make watch
    ```
+
+OR
 
 Run development server with `Dockerfile`
 
