@@ -269,7 +269,7 @@ const docTemplate = `{
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0.0",
 	Host:             "deals-api.gothuey.dev",
-	BasePath:         "",
+	BasePath:         "/api",
 	Schemes:          []string{},
 	Title:            "Swiss Deals API",
 	Description:      "Aggregate deals of the day from Digitec, Galaxus, QoQa. Front-end available on http://deals.gothuey.dev/",

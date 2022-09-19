@@ -28,6 +28,7 @@ import (
 
 // @host deals-api.gothuey.dev
 // //@host localhost:9000
+// @BasePath  /api
 
 func main() {
 	err := godotenv.Load()
