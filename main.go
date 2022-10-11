@@ -67,14 +67,21 @@ func main() {
 // @Tags        Health check 🩺
 // @Accept      */*
 // @Produce     json
+// @Success     200 {object} main.setupRoutes.HealthCheck
 // @Router      / [get]
 func setupRoutes(app *fiber.App) {
 
+	type HealthCheck struct {
+		Success bool   `json:"success"`
+		Message string `json:"message"`
+	}
+
 	app.Get("/api", func(c *fiber.Ctx) error {
-		return c.Status(fiber.StatusOK).JSON(fiber.Map{
-			"success": true,
-			"message": "Everything Is Okay 👋🏾 from air!",
-		})
+		response := &HealthCheck{
+			Success: true,
+			Message: "Everything Is Okay!",
+		}
+		return c.Status(fiber.StatusOK).JSON(response)
 	})
 
 	// api group

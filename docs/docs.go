@@ -36,7 +36,14 @@ const docTemplate = `{
                     "Health check 🩺"
                 ],
                 "summary": "Show the status of server.",
-                "responses": {}
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/main.setupRoutes.HealthCheck"
+                        }
+                    }
+                }
             }
         },
         "/deals/digitec": {
@@ -259,6 +266,17 @@ const docTemplate = `{
                 },
                 "url": {
                     "type": "string"
+                }
+            }
+        },
+        "main.setupRoutes.HealthCheck": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "success": {
+                    "type": "boolean"
                 }
             }
         }

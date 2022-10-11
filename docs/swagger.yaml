@@ -40,6 +40,13 @@ definitions:
       url:
         type: string
     type: object
+  main.setupRoutes.HealthCheck:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
 host: deals-api.gothuey.dev
 info:
   contact:
@@ -60,7 +67,11 @@ paths:
       description: get the status of server.
       produces:
       - application/json
-      responses: {}
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.setupRoutes.HealthCheck'
       summary: Show the status of server.
       tags:
       - "Health check \U0001FA7A"
