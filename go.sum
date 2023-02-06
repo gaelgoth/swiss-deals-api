@@ -41,8 +41,8 @@ github.com/gocolly/colly v1.2.0/go.mod h1:Hof5T3ZswNVsOHYmba1u03W65HDWgpV5HifSuu
 github.com/gofiber/fiber/v2 v2.40.1/go.mod h1:Gko04sLksnHbzLSRBFWPFdzM9Ws9pRxvvIaohJK1dsk=
 github.com/gofiber/fiber/v2 v2.41.0 h1:YhNoUS/OTjEz+/WLYuQ01xI7RXgKEFnGBKMagAu5f0M=
 github.com/gofiber/fiber/v2 v2.41.0/go.mod h1:RdebcCuCRFp4W6hr3968/XxwJVg0K+jr9/Ae0PFzZ0Q=
-github.com/gofiber/redirect/v2 v2.1.30 h1:zXlQihmb6WuO35PSDD/wbd+sIaGXyvD5riwRWpXmQOI=
-github.com/gofiber/redirect/v2 v2.1.30/go.mod h1:b+VKpb9mKTTdzUfjEGH96OodMKJxZ9LWFOodPxgulMM=
+github.com/gofiber/redirect/v2 v2.1.31 h1:AM44Bh1Ytfny0Ac9ysb+mQ/Mmw6aX/+rc9hrVyl6LtA=
+github.com/gofiber/redirect/v2 v2.1.31/go.mod h1:b+VKpb9mKTTdzUfjEGH96OodMKJxZ9LWFOodPxgulMM=
 github.com/gofiber/swagger v0.1.8 h1:Ut8gecn/nf62HGexuxaju30pVLF7UL1HZXHTq9EA7QI=
 github.com/gofiber/swagger v0.1.8/go.mod h1:9LPuXJldC8uGFtpxb3JQqhSjhyP1p5id+0GvRU8eUUw=
 github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
