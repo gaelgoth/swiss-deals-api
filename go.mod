@@ -5,19 +5,24 @@ go 1.18
 
 require (
 	github.com/gocolly/colly v1.2.0
-	github.com/gofiber/fiber/v2 v2.41.0
-	github.com/gofiber/swagger v0.1.8
+	github.com/gofiber/fiber/v2 v2.42.0
+	github.com/gofiber/swagger v0.1.9
 	github.com/joho/godotenv v1.4.0
 )
 
 require (
+	github.com/google/uuid v1.3.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
+	github.com/philhofer/fwd v1.1.1 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/savsgio/dictpool v0.0.0-20221023140959-7bf2e61cea94 // indirect
+	github.com/savsgio/gotils v0.0.0-20220530130905-52f3993e8d6d // indirect
 	github.com/swaggo/files v0.0.0-20220728132757-551d4a08d97a // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/tinylib/msgp v1.1.6 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
@@ -47,7 +52,7 @@ require (
 	github.com/temoto/robotstxt v1.1.2 // indirect
 	github.com/tidwall/gjson v1.14.4
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.43.0 // indirect
+	github.com/valyala/fasthttp v1.44.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	golang.org/x/net v0.0.0-20220906165146-f3363e06e74c // indirect
 	golang.org/x/sys v0.0.0-20220825204002-c680a09ffe64 // indirect
