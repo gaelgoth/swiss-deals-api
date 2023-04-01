@@ -3,12 +3,10 @@ package main
 import (
 	"log"
 	"os"
-	"time"
 
 	_ "github.com/gaelgoth/swiss-deals-api/docs"
 	"github.com/gaelgoth/swiss-deals-api/routes"
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cache"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/redirect/v2"
@@ -44,11 +42,11 @@ func main() {
 			},
 			StatusCode: 301,
 		}),
-		cache.New(cache.Config{
-			// caching requests during 15 minutes
-			Expiration:   15 * time.Minute,
-			CacheControl: true,
-		}),
+		// cache.New(cache.Config{
+		// 	// caching requests during 15 minutes
+		// 	Expiration:   15 * time.Minute,
+		// 	CacheControl: true,
+		// }),
 	)
 	setupRoutes(app)
 	app.Get("/swagger/*", swagger.HandlerDefault)
