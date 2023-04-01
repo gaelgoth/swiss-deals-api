@@ -31,7 +31,7 @@ type GalaxusProduct struct {
 // @Router      /deals/digitec [get]
 func GetDigitecOffer(c *fiber.Ctx) error {
 	log.Println("GetDigitecOffer")
-	var offerCollector []string = GetCollectorData([]string{"digitec.ch", "www.digitec.ch", "https://www.digitec.ch/fr/liveshopping/81"})
+	var offerCollector []string = GetCollectorData([]string{"digitec.ch", "www.digitec.ch", "https://www.digitec.ch/en/daily-deal"})
 	url := "https://www.digitec.ch"
 	for k, v := range offerCollector {
 		fmt.Println(k, v)
@@ -42,7 +42,7 @@ func GetDigitecOffer(c *fiber.Ctx) error {
 	}
 
 	stockCollector := offerCollector[0]
-	priceCollector := offerCollector[2]
+	priceCollector := offerCollector[8]
 	title := offerCollector[3]
 	// The image is the last element collected, but depending on the structure of the page the index may change
 	imageUrl := url + offerCollector[len(offerCollector)-1]
@@ -81,7 +81,7 @@ func GetGalaxusOffer(c *fiber.Ctx) error {
 	}
 
 	stockCollector := offerCollector[0]
-	priceCollector := offerCollector[2]
+	priceCollector := offerCollector[8]
 	title := offerCollector[3]
 	// The image is the last element collected, but depending on the structure of the page the index may change
 	imageUrl := url + offerCollector[len(offerCollector)-1]
@@ -110,14 +110,14 @@ func GetCollectorData(domains []string) []string {
 
 	data := make([]string, 0)
 
-	collector.OnHTML(".bigLayout_container__3vF1z div", func(element *colly.HTMLElement) {
+	collector.OnHTML(".sc-v6swez-17 div", func(element *colly.HTMLElement) {
 		result := element.Text
 		if len(result) != 0 {
 			data = append(data, result)
 		}
 	})
 
-	collector.OnHTML("article.liveshoppingbigProduct", func(e *colly.HTMLElement) {
+	collector.OnHTML("article.sc-1k4pd2t-0", func(e *colly.HTMLElement) {
 		image_element := e.DOM.Find("img").Eq(0)
 		image, _ := image_element.Attr("src")
 		data = append(data, image)
@@ -163,6 +163,7 @@ func getDealStock(stock string) map[string]int {
 
 func getDealPrice(priceCollector string) map[string]int {
 	priceDeal := make(map[string]int)
+	log.Println("price" + priceCollector)
 
 	re := regexp.MustCompile("[0-9]+")
 	price := re.FindAllString(priceCollector, -1)

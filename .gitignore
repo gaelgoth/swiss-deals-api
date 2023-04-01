@@ -1,3 +1,4 @@
 .vscode/*
 server
 deal-backend
+tmp/main

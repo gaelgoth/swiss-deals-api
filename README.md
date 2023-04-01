@@ -28,7 +28,7 @@ This API aggregates the deals of the day on the following online sites:
 Run development server with `Makefile`
 
    ```bash
-   # auto reload on file modification 
+   # auto reload on file modification
    make watch
    ```
 
@@ -38,7 +38,7 @@ Run development server with `Dockerfile`
 
 ```bash
 # auto reload on file modification with air
-docker-compose -f docker-compose.dev.yml up   
+docker-compose -f docker-compose.dev.yml up
 ```
 
 ## Documentation 📖
