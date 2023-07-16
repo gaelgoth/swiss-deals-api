@@ -6,7 +6,7 @@ go 1.18
 require (
 	github.com/gocolly/colly v1.2.0
 	github.com/gofiber/fiber/v2 v2.44.0
-	github.com/gofiber/swagger v0.1.8
+	github.com/gofiber/swagger v0.1.11
 	github.com/joho/godotenv v1.4.0
 )
 
@@ -19,7 +19,7 @@ require (
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/savsgio/dictpool v0.0.0-20221023140959-7bf2e61cea94 // indirect
 	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
-	github.com/swaggo/files v0.0.0-20220728132757-551d4a08d97a // indirect
+	github.com/swaggo/files/v2 v2.0.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tinylib/msgp v1.1.8 // indirect
@@ -48,7 +48,7 @@ require (
 	github.com/klauspost/compress v1.16.3 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
-	github.com/swaggo/swag v1.8.10
+	github.com/swaggo/swag v1.8.12
 	github.com/temoto/robotstxt v1.1.2 // indirect
 	github.com/tidwall/gjson v1.14.4
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
@@ -57,6 +57,6 @@ require (
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.7.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
-	golang.org/x/tools v0.6.0 // indirect
+	golang.org/x/tools v0.7.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 )
